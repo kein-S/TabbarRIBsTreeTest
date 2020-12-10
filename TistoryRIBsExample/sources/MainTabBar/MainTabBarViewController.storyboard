@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vKn-9P-Ny8">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="GzV-lN-fg7">
+            <objects>
+                <viewController storyboardIdentifier="MainTabBarViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vKn-9P-Ny8" customClass="MainTabBarViewController" customModule="TistoryRIBsExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BNZ-bO-rhc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="N4h-N0-UeZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y0b-jz-Z8x">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzo-uz-86e">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="60"/>
+                                        <state key="normal" title="Home"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzR-es-1lE">
+                                        <rect key="frame" x="75" y="0.0" width="75" height="60"/>
+                                        <state key="normal" title="Feed"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8w-dp-j2p">
+                                        <rect key="frame" x="150" y="0.0" width="75" height="60"/>
+                                        <state key="normal" title="Post"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1w-Pt-Vwl">
+                                        <rect key="frame" x="225" y="0.0" width="75" height="60"/>
+                                        <state key="normal" title="News"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5C-UW-fEE">
+                                        <rect key="frame" x="300" y="0.0" width="75" height="60"/>
+                                        <state key="normal" title="Blog"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="akU-Mf-0RS"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHC-QN-G26">
+                                <rect key="frame" x="0.0" y="56" width="375" height="551"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HgA-Aw-ocO"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="bottom" secondItem="Y0b-jz-Z8x" secondAttribute="bottom" id="1Ne-Lj-uXq"/>
+                            <constraint firstItem="Y0b-jz-Z8x" firstAttribute="leading" secondItem="BNZ-bO-rhc" secondAttribute="leading" id="2Dq-8I-n3O"/>
+                            <constraint firstItem="N4h-N0-UeZ" firstAttribute="leading" secondItem="HgA-Aw-ocO" secondAttribute="leading" id="2Ih-Xf-bFd"/>
+                            <constraint firstItem="EHC-QN-G26" firstAttribute="top" secondItem="N4h-N0-UeZ" secondAttribute="bottom" id="7ob-2m-3oG"/>
+                            <constraint firstItem="N4h-N0-UeZ" firstAttribute="top" secondItem="HgA-Aw-ocO" secondAttribute="top" id="8Zm-dM-Coc"/>
+                            <constraint firstItem="N4h-N0-UeZ" firstAttribute="trailing" secondItem="HgA-Aw-ocO" secondAttribute="trailing" id="B4i-ZB-tbw"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="trailing" secondItem="Y0b-jz-Z8x" secondAttribute="trailing" id="VDt-zU-aqr"/>
+                            <constraint firstItem="Y0b-jz-Z8x" firstAttribute="top" secondItem="EHC-QN-G26" secondAttribute="bottom" id="ZcS-Hz-KWR"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="trailing" secondItem="EHC-QN-G26" secondAttribute="trailing" id="lgd-GI-35o"/>
+                            <constraint firstItem="EHC-QN-G26" firstAttribute="leading" secondItem="HgA-Aw-ocO" secondAttribute="leading" id="nbM-da-GiF"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="60"/>
+                    <connections>
+                        <outlet property="btnBlog" destination="G5C-UW-fEE" id="Pzo-OF-iDX"/>
+                        <outlet property="btnFeed" destination="OzR-es-1lE" id="58p-J0-AzE"/>
+                        <outlet property="btnHome" destination="rzo-uz-86e" id="6XE-my-U7M"/>
+                        <outlet property="btnNews" destination="S1w-Pt-Vwl" id="rDa-1q-DQj"/>
+                        <outlet property="btnPost" destination="A8w-dp-j2p" id="btw-vr-Nxc"/>
+                        <outlet property="mainContentView" destination="EHC-QN-G26" id="Qxo-WM-HVb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0X-am-vwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="-12.143928035982009"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
